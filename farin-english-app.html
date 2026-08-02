@@ -3104,7 +3104,7 @@ function profileHeaderCard(p){
     <span class="sparkle" style="top:36px; right:26px; left:auto; width:6px; height:6px; animation-delay:.5s;"></span>
     <span class="sparkle" style="top:90px; left:16px; width:5px; height:5px; animation-delay:1s;"></span>
     <span class="sparkle" style="bottom:14px; right:20px; left:auto; width:5px; height:5px; animation-delay:1.5s;"></span>
-    <img src="app-assets/char-${charKey}.png" alt="" class="character-portrait" loading="lazy">
+    <img src="char-${charKey}.png" alt="" class="character-portrait" loading="lazy">
     <div class="eyebrow" style="color:rgba(255,255,255,.8);"><bdi>${esc(p.name)}</bdi></div>
     <h1 class="display" style="font-size:23px; margin-top:4px; color:#fff;">${esc(L(arch.name.en,arch.name.tr,arch.name.fa))}</h1>
     <p style="margin-top:10px; color:rgba(255,255,255,.92); font-size:14px; line-height:1.5;">${esc(L(arch.blurb.en,arch.blurb.tr,arch.blurb.fa))}</p>
@@ -3224,10 +3224,10 @@ function pickGreeting(p, dueCount){
 
 /* ============================= DASHBOARD TILE ILLUSTRATIONS (flat, non-emoji) ============================= */
 const TILE_ILLUSTRATIONS = {
-  goals:`<img src="app-assets/icon-goals.png" alt="" loading="lazy">`,
-  speaking:`<img src="app-assets/icon-speaking.png" alt="" loading="lazy">`,
-  story:`<img src="app-assets/icon-story.png" alt="" loading="lazy">`,
-  review:`<img src="app-assets/icon-review.png" alt="" loading="lazy">`
+  goals:`<img src="icon-goals.png" alt="" loading="lazy">`,
+  speaking:`<img src="icon-speaking.png" alt="" loading="lazy">`,
+  story:`<img src="icon-story.png" alt="" loading="lazy">`,
+  review:`<img src="icon-review.png" alt="" loading="lazy">`
 };
 function claySparkles(){
   return `<span class="sparkle" style="top:14px; left:18px; animation-delay:0s;"></span>
@@ -3695,7 +3695,7 @@ function renderSpeakingClub(){
     <div class="screen" style="padding-top:0;">
       <div class="clay-banner" style="background:var(--clay-coral);">
         ${claySparkles()}
-        <img src="app-assets/icon-speaking.png" alt="" class="clay-banner-illustration" loading="lazy">
+        <img src="icon-speaking.png" alt="" class="clay-banner-illustration" loading="lazy">
         <div class="clay-banner-title">${L('Talk it out loud','Yüksek sesle konuş','بلند حرف بزن')}</div>
         <div class="clay-banner-sub">${L('5 live sessions with a real teacher — book whenever you\'re ready.','Gerçek bir öğretmenle 5 canlı seans — hazır olduğunda ayırt.','۵ جلسه زنده با یک معلم واقعی — هر وقت آماده بودی رزرو کن.')}</div>
       </div>
@@ -3719,7 +3719,7 @@ function renderStoryList(){
     <div class="screen" style="padding-top:0;">
       <div class="clay-banner" style="background:var(--clay-lavender);">
         ${claySparkles()}
-        <img src="app-assets/icon-story.png" alt="" class="clay-banner-illustration" loading="lazy">
+        <img src="icon-story.png" alt="" class="clay-banner-illustration" loading="lazy">
         <div class="clay-banner-title">${L('Get lost in a story','Bir hikayede kaybol','در یک داستان گم شو')}</div>
         <div class="clay-banner-sub">${L('New words come alive when you see them in a real story.','Yeni kelimeler gerçek bir hikayede gördüğünde canlanır.','کلمات جدید وقتی در یک داستان واقعی می‌بینی‌شان، زنده می‌شوند.')}</div>
       </div>
